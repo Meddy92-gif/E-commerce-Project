@@ -57,4 +57,89 @@ The dataset consists of transactional records from a superstore, containing attr
 - Enhance database normalization.
 - Apply more advanced predictive models.
 
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# Customer Purchase Behavior Analysis
+
+## Overview
+This project analyzes customer purchase behavior using data from a retail dataset. It performs clustering and regression analysis on monetary, frequency, and recency metrics to gain insights into customer purchasing patterns.
+
+## Dataset
+The dataset used for this analysis is **Sample-Superstore.csv**, which contains transactional data including order details, sales, profit, and customer information.
+
+## Features Used
+- **Order Date & Ship Date**: Used to calculate recency and shipping behavior.
+- **Sales & Profit**: Monetary values used to assess customer spending patterns.
+- **Quantity & Discount**: Product purchase behavior indicators.
+- **Customer ID**: Unique identifier for tracking repeat customers.
+- **Region, Segment, Ship Mode**: Categorical variables impacting customer trends.
+
+## Steps in Analysis
+
+### 1. Data Preprocessing
+- Read and clean the dataset.
+- Convert `Order Date` to datetime format.
+- Aggregate data by `Customer ID` to compute the following:
+  - **Repeat Purchase Count**
+  - **Total Sales per Customer**
+  - **Total Quantity Purchased**
+  - **Average Discount Received**
+  - **Total Profit per Customer**
+  - **Recency (days since last purchase)**
+  - **Most Frequent Ship Mode, Segment, and Region**
+
+### 2. Regression Analysis
+- **Linear Regression**: Predicts repeat purchase count based on sales, discount, profit, segment, and recency.
+- **Model Evaluation**: Root Mean Squared Error (RMSE) is calculated to assess model accuracy.
+- **Visualization**:
+  - Actual vs. Predicted Repeat Purchase Count
+  - Sales vs. Repeat Purchase Count with Regression Line
+
+### 3. Sales Forecasting by Segment
+- Extracts `Quarter` from `Order Date` to track sales trends.
+- Aggregates `Sales` and `Profit Margin` by `Segment` and `Quarter`.
+- Fits **Linear and Polynomial Regression** models to forecast future sales.
+- **Plots Trends** for different customer segments.
+
+### 4. Clustering Analysis (Monetary, Frequency, Recency)
+- Creates three customer behavior metrics:
+  - **Monetary**: Total amount spent per customer.
+  - **Frequency**: Number of unique orders per customer.
+  - **Recency**: Days since last order.
+- **Detects Outliers** using box plots.
+- **Removes Outliers** using the Interquartile Range (IQR) method.
+
+## Key Findings
+- Customers with higher sales tend to make repeat purchases more frequently.
+- Discount impacts purchase frequency but may reduce profit margins.
+- Different customer segments exhibit unique purchase behaviors over time.
+- Clustering customers based on monetary, frequency, and recency provides actionable insights for targeted marketing.
+
+## Technologies Used
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+- **Machine Learning Models**: Linear Regression, Polynomial Regression, Clustering
+
+## How to Use
+1. Ensure **Python 3.x** and required libraries are installed:
+   ```sh
+   pip install numpy pandas matplotlib seaborn scikit-learn
+   ```
+2. Place `Sample-Superstore.csv` in the working directory.
+3. Run the script:
+   ```sh
+   python customer_analysis.py
+   ```
+4. Analyze the generated plots and metrics.
+
+## Future Enhancements
+- Implement **K-Means Clustering** for customer segmentation.
+- Apply **Time Series Forecasting** (e.g., ARIMA, LSTM) for sales predictions.
+- Integrate **customer retention models** using survival analysis.
+
+---
+This project provides a foundational approach to customer analytics using retail data, aiding in data-driven decision-making for businesses.
+
+
 
