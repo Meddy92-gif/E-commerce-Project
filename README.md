@@ -143,7 +143,7 @@ The dataset used for this analysis is **Sample-Superstore.csv**, which contains 
 - Integrate **customer retention models** using survival analysis.
 
 ---
-This project provides a foundational approach to customer analytics using retail data, aiding in data-driven decision-making for businesses.
+After significant technical enhancements, I hope this project will provide a foundational approach to customer analytics using retail data, aiding in data-driven business decision-making.
 
 
 
