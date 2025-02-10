@@ -81,6 +81,10 @@ The dataset used for this analysis is **Sample-Superstore.csv**, which contains 
 ### 1. Data Preprocessing
 - Read and clean the dataset.
 - Convert `Order Date` to datetime format.
+- Divide the dataset into subsets and determine the relations considering the characteristics of a Primary Key and Foreign Key:
+
+![image](https://github.com/user-attachments/assets/7eb9a484-02f2-457d-a89d-e6ee87921733)
+
 - Aggregate data by `Customer ID` to compute the following:
   - **Repeat Purchase Count**
   - **Total Sales per Customer**
