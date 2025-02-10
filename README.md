@@ -21,7 +21,7 @@ This repository contains a Python script for processing, cleaning, and analyzing
   - Implements Linear Regression and Polynomial Regression for trend analysis.
 
 ## Technologies Used
-- **Python**: Core programming language for data processing.
+- **Python**: A core programming language for data processing.
 - **Libraries**:
   - `numpy`: Numerical operations
   - `pandas`: Data manipulation and analysis
@@ -81,7 +81,7 @@ The dataset used for this analysis is **Sample-Superstore.csv**, which contains 
 ### 1. Data Preprocessing
 - Read and clean the dataset.
 - Convert `Order Date` to datetime format.
-- Divide the dataset into subsets and determine the relations considering the characteristics of a Primary Key and Foreign Key:
+- Divide the dataset into subsets and determine the relations considering the main characteristics of a Primary Key and Foreign Key:
 
 ![image](https://github.com/user-attachments/assets/7eb9a484-02f2-457d-a89d-e6ee87921733)
 
