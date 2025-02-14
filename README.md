@@ -36,17 +36,6 @@ The dataset consists of transactional records from a superstore, containing attr
 - **Customers**: Customer ID, Name, Region, City, State
 - **Products**: Product ID, Name, Category, Sub-Category
 - **Sales Info**: Sales, Quantity, Discount, Profit
-
-## How to Run
-1. **Install Dependencies:**
-   ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn
-   ```
-2. **Run the Script:**
-   ```bash
-   python superstore_analysis.py
-   ```
-   running the scripts work also on jupyter files
    
 4. **Check the Output:**
    - Cleaned CSV files will be saved in the working directory.
