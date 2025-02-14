@@ -114,22 +114,8 @@ The dataset used for this analysis is **Sample-Superstore.csv**, which contains 
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
 - **Machine Learning Models**: Linear Regression, Polynomial Regression, Clustering
 
-## How to Use
-1. Ensure **Python 3.x** and required libraries are installed:
-   ```sh
-   pip install numpy pandas matplotlib seaborn scikit-learn
-   ```
-2. Place `Sample-Superstore.csv` in the working directory.
-3. Run the script:
-   ```sh
-   python customer_analysis.py
-   ```
-4. Analyze the generated plots and metrics.
-
-## Future Enhancements
-- Implement **K-Means Clustering** for customer segmentation.
-- Apply **Time Series Forecasting** (e.g., ARIMA, LSTM) for sales predictions.
-- Integrate **customer retention models** using survival analysis.
+To view the generated plots and metrics, check the [following repositories](https://github.com/Meddy92-gif/E-commerce-Project/blob/master/EDA_Superstore.ipynb)
+To analyze the ML-driven clustering,have a look at [here](https://github.com/Meddy92-gif/E-commerce-Project/blob/master/k-means-clustering.ipynb) 
 
 ---
 After significant technical enhancements, I hope this project will provide a foundational approach to customer analytics using retail data, aiding in data-driven business decision-making.
